@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: zubigpt-server
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
